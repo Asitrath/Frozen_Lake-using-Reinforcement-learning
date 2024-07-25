@@ -1,5 +1,9 @@
 # Reinforcement learning on Frozen Lake 
 
+## Description
+
+This project implements and compares different reinforcement learning algorithms, on the FrozenLake environment from OpenAI's Gym library. The goal is to navigate a frozen lake and reach a goal while avoiding holes using the two different learning algorithms.
+
 **Table of Contents**
 
 Policy Optimization
@@ -18,10 +22,6 @@ Sarsa and Q-learning
 n-step Sarsa
    - n-step_Sarsa.py
    - README.md
-
-## Description
-
-This project implements and compares different reinforcement learning algorithms, on the FrozenLake environment from OpenAI's Gym library. The goal is to navigate a frozen lake and reach a goal while avoiding holes using the two different learning algorithms.
 
 ## Requirements
 
