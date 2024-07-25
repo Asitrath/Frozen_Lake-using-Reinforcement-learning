@@ -40,4 +40,3 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## Acknowledgments
 
 This project uses the FrozenLake-v0 environment from OpenAI Gym and implements reinforcement learning algorithms as described in standard RL literature.
-```
