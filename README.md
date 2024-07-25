@@ -82,5 +82,3 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 This project uses the FrozenLake-v0 environment from OpenAI Gym and implements reinforcement learning algorithms as described in standard RL literature.
 ```
-
-This README provides a comprehensive overview of your project, including its purpose, features, setup instructions, and usage guidelines. You may want to customize it further based on any specific details or additional information you'd like to include.
