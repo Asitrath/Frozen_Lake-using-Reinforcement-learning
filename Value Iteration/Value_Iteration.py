@@ -46,8 +46,8 @@ def value_iteration():
     V_states = np.zeros(n_states)  # init values as zero
     theta = 1e-8
     gamma = 0.8
-    # TODO: implement the value iteration algorithm Hint: env.P[state][action] gives you tuples (p, n_state, r,
-    #  is_terminal), which tell you the probability p that you end up in the next state n_state and receive reward r
+    # env.P[state][action] gives you tuples (p, n_state, r,is_terminal),
+    # which tell you the probability p that you end up in the next state n_state and receive reward r
     num_iterations = 1000
 
     # for every iteration
@@ -68,7 +68,7 @@ def value_iteration():
 
             V_states[state] = max(Q_values)
 
-            # after computing the value table, that is, value of all the states, we check whether the
+        # after computing the value table, that is, value of all the states, we check whether the
         # difference between value table obtained in the current iteration and previous iteration is
         # less than or equal to a threshold value if it is less then we break the loop and return the
         # value table as our optimal value function as shown below:
@@ -77,7 +77,8 @@ def value_iteration():
             print('Value-iteration converged at iteration# %d.' % (i + 1))
             print("Optimal value function: %s" % V_states)
             break
-    # TODO: After value iteration algorithm, obtain policy and return it
+    
+    # After value iteration algorithm, obtain policy and return it
     policy = np.zeros(n_states, dtype=int)
 
     # for each state
@@ -104,8 +105,7 @@ def main():
     # run the value iteration
     policy = value_iteration()
     print("Computed policy: ")
-    print(policy.reshape(dims))
-    # if you computed a (working) policy, you can print it nicely with the following command:
+    print(policy.reshape(dims)):
     print_policy(policy, env)
 
     # This code can be used to "rollout" a policy in the environment:
